@@ -31,4 +31,4 @@ WHERE Products.CategoryID = (SELECT CategoryID FROM Categories WHERE CategoryNam
 
 UPDATE Customers
 SET ContactName = ''
-WHERE Country != 'China';
+WHERE Country != 'China'
