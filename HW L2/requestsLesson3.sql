@@ -29,7 +29,8 @@ FROM OrderDetails
 SELECT 
     COUNT(DISTINCT Suppliers.Country) AS total_of_countries
 FROM Suppliers
-WHERE Suppliers.SupplierID IN (
+WHERE 
+Suppliers.SupplierID IN (
     SELECT DISTINCT Products.SupplierID
 FROM Products
     WHERE Products.CategoryID = '1'
