@@ -14,7 +14,7 @@ FROM Orders
 
 JOIN Customers ON Orders.CustomerID=Customers.CustomerID
 
-GROUP BY Orders.CustomerID
+GROUP BY Customers.Country
 
 ORDER BY total_orders DESC
 LIMIT 3
